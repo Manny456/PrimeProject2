@@ -124,7 +124,6 @@ class RestaurantControllerTest {
         String clientJson = objectMapper.writeValueAsString(restaurant2);
 
         mockMvc.perform(put("/api/v1/restaurants/1")
-                .content(clientJson)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(clientJson))
                 .andExpect(MockMvcResultMatchers.status().isOk());
