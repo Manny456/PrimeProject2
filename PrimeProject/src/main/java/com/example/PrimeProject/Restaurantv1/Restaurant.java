@@ -24,8 +24,8 @@ public class Restaurant {
     private Integer dairyScore;
     @Column(name = "Optional")
     private String comment;
-    @Column(name = "IsReviewAccepted")
-    private Boolean isReviewAccepted;
+//    @Column(name = "IsReviewAccepted")
+//    private Boolean isReviewAccepted;
     @Column(name = "PersonZipCode")
     private String personZipCode;
     @Column(name = "PersonSTate")
@@ -50,13 +50,13 @@ public class Restaurant {
         this.comment = comment;
     }
 
-    public Restaurant(String personSubmitting, Integer peanutScore, Integer eggScore, Integer dairyScore, String comment, Boolean isReviewAccepted, String personZipCode, String personState, String personCity, Boolean interestInPeanutAllergies, Boolean interestInEggAllergies, Boolean interestInDairyAllergies) {
+    public Restaurant(String personSubmitting, Integer peanutScore, Integer eggScore, Integer dairyScore, String comment, String personZipCode, String personState, String personCity, Boolean interestInPeanutAllergies, Boolean interestInEggAllergies, Boolean interestInDairyAllergies) {
         this.personSubmitting = personSubmitting;
         this.peanutScore = peanutScore;
         this.eggScore = eggScore;
         this.dairyScore = dairyScore;
         this.comment = comment;
-        this.isReviewAccepted = isReviewAccepted;
+//        this.isReviewAccepted = isReviewAccepted;
         this.personZipCode = personZipCode;
         this.personState = personState;
         this.personCity = personCity;
@@ -65,14 +65,14 @@ public class Restaurant {
         this.interestInDairyAllergies = interestInDairyAllergies;
     }
 
-    public Restaurant(Long id, String personSubmitting, Integer peanutScore, Integer eggScore, Integer dairyScore, String comment, Boolean isReviewAccepted, String personZipCode, String personState, String personCity, Boolean interestInPeanutAllergies, Boolean interestInEggAllergies, Boolean interestInDairyAllergies) {
+    public Restaurant(Long id, String personSubmitting, Integer peanutScore, Integer eggScore, Integer dairyScore, String comment, String personZipCode, String personState, String personCity, Boolean interestInPeanutAllergies, Boolean interestInEggAllergies, Boolean interestInDairyAllergies) {
         this.id = id;
         this.personSubmitting = personSubmitting;
         this.peanutScore = peanutScore;
         this.eggScore = eggScore;
         this.dairyScore = dairyScore;
         this.comment = comment;
-        this.isReviewAccepted = isReviewAccepted;
+//        this.isReviewAccepted = isReviewAccepted;
         this.personZipCode = personZipCode;
         this.personState = personState;
         this.personCity = personCity;
@@ -140,15 +140,15 @@ public class Restaurant {
         this.comment = comment;
     }
 
-    public Boolean getReviewAccepted() {
+//    public Boolean getReviewAccepted() {
+//
+//        return isReviewAccepted;
+//    }
 
-        return isReviewAccepted;
-    }
-
-    public void setReviewAccepted(Boolean reviewAccepted) {
-
-        isReviewAccepted = reviewAccepted;
-    }
+//    public void setReviewAccepted(Boolean reviewAccepted) {
+//
+//        isReviewAccepted = reviewAccepted;
+//    }
 
     public String getPersonZipCode() {
 
