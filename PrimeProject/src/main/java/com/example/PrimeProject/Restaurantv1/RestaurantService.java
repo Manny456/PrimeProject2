@@ -15,6 +15,13 @@ public class RestaurantService {
         this.restaurantRepository = restaurantRepository;
     }
 
+    public Long getsAverageScore(Long id) {
+        Optional<Restaurant> restaurantToBeUsed = restaurantRepository.findById(id);
+        Restaurant usedRestaurant = restaurantToBeUsed.get();
+        Long averageScore = (long) ((usedRestaurant.getPeanutScore() + usedRestaurant.getEggScore() +usedRestaurant.getDairyScore())) / 3;
+        return averageScore;
+    }
+
     public List<Restaurant> getAllRestaurants(){
 
         return restaurantRepository.findAll();
@@ -103,10 +110,6 @@ public class RestaurantService {
 
         if(restaurant.getInterestInEggAllergies() != null){
             restaurantToUpdate.setInterestInEggAllergies(restaurant.getInterestInEggAllergies());
-        }
-
-        if(restaurant.getReviewAccepted() != null){
-            restaurantToUpdate.setReviewAccepted(restaurant.getReviewAccepted());
         }
 
         Restaurant updatedRestaurant = restaurantRepository.save(restaurantToUpdate);

@@ -15,9 +15,10 @@ import java.util.Optional;
 
 public class RestaurantController {
 
-    @Autowired
+
     private final RestaurantService restaurantService;
 
+    @Autowired
     public  RestaurantController(final RestaurantService restaurantService){
         this.restaurantService = restaurantService;
     }
@@ -33,6 +34,11 @@ public class RestaurantController {
 
         Restaurant restaurantById = this.restaurantService.getRestaurantById(id);
         return restaurantById;
+    }
+
+    @GetMapping("/api/v1/restaurantAverageScore/{id}")
+    public Long GetAverageScores(@PathVariable("id") Long id) {
+        return restaurantService.getsAverageScore(id);
     }
 
     @PostMapping("/api/v1/restaurants")
