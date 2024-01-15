@@ -1,0 +1,15 @@
+2023-12-31 19:07:42.149377Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+select r1_0.id,r1_0.optional,r1_0.dairy_score,r1_0.egg_score,r1_0.interest_in_dairy_allergies,r1_0.interest_in_egg_allergies,r1_0.interest_in_peanut_allergies,r1_0.peanut_score,r1_0.person_city,r1_0.personstate,r1_0.person_submitting,r1_0.person_zip_code from restaurant r1_0 where r1_0.id is null [42104-224]
+2023-12-31 19:07:44.217034Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+select r1_0.id,r1_0.optional,r1_0.dairy_score,r1_0.egg_score,r1_0.interest_in_dairy_allergies,r1_0.interest_in_egg_allergies,r1_0.interest_in_peanut_allergies,r1_0.peanut_score,r1_0.person_city,r1_0.personstate,r1_0.person_submitting,r1_0.person_zip_code from restaurant r1_0 where r1_0.id is null [42104-224]
+2023-12-31 19:08:29.774590Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+select r1_0.id,r1_0.optional,r1_0.dairy_score,r1_0.egg_score,r1_0.interest_in_dairy_allergies,r1_0.interest_in_egg_allergies,r1_0.interest_in_peanut_allergies,r1_0.peanut_score,r1_0.person_city,r1_0.personstate,r1_0.person_submitting,r1_0.person_zip_code from restaurant r1_0 [42104-224]
+2023-12-31 19:09:30.860775Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+select r1_0.id,r1_0.optional,r1_0.dairy_score,r1_0.egg_score,r1_0.interest_in_dairy_allergies,r1_0.interest_in_egg_allergies,r1_0.interest_in_peanut_allergies,r1_0.peanut_score,r1_0.person_city,r1_0.personstate,r1_0.person_submitting,r1_0.person_zip_code from restaurant r1_0 where r1_0.id is null [42104-224]
+2023-12-31 19:16:25.189075Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+select r1_0.id,r1_0.optional,r1_0.dairy_score,r1_0.egg_score,r1_0.interest_in_dairy_allergies,r1_0.interest_in_egg_allergies,r1_0.interest_in_peanut_allergies,r1_0.peanut_score,r1_0.person_city,r1_0.personstate,r1_0.person_submitting,r1_0.person_zip_code from restaurant r1_0 where r1_0.id is null [42104-224]
